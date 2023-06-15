@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Circus-Theme-Entry-of-the-Gladiators-Ragtime-Version.mp3-705eeb1ab0b8490b6f95827076340ebe.mp3str"
+
+[deps]
+
+source_file="res://musik/New/Circus-Theme-Entry-of-the-Gladiators-Ragtime-Version.mp3"
+dest_files=[ "res://.import/Circus-Theme-Entry-of-the-Gladiators-Ragtime-Version.mp3-705eeb1ab0b8490b6f95827076340ebe.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

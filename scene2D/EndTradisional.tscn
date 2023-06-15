@@ -1,0 +1,66 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://scene2D/script/menu.gd" type="Script" id=1]
+[ext_resource path="res://aset/rumput/EndTradisional.jpg" type="Texture" id=2]
+[ext_resource path="res://aset/rumput/gbsodor.png" type="Texture" id=3]
+[ext_resource path="res://musik/audio/game succes.mp3" type="AudioStream" id=4]
+
+[node name="Endradisional" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="EndTradisional" type="Sprite" parent="."]
+position = Vector2( 515, 297 )
+scale = Vector2( 1.00385, 1.05479 )
+texture = ExtResource( 2 )
+
+[node name="Gbsodor" type="Sprite" parent="EndTradisional"]
+position = Vector2( -221.148, 23.3503 )
+scale = Vector2( 0.507578, 0.487507 )
+texture = ExtResource( 3 )
+
+[node name="menu" type="VBoxContainer" parent="."]
+anchor_right = 0.327
+anchor_bottom = 0.891
+margin_left = 28.0
+margin_top = 487.0
+margin_right = 129.0
+margin_bottom = 534.0
+rect_scale = Vector2( 2, 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="lanjut" type="Button" parent="menu"]
+margin_right = 101.0
+margin_bottom = 20.0
+text = "NEXT"
+
+[node name="keluar_gameTradisional" type="Button" parent="menu"]
+margin_top = 24.0
+margin_right = 101.0
+margin_bottom = 44.0
+text = "KELUAR"
+
+[node name="judul2" type="Label" parent="."]
+margin_left = 47.0
+margin_top = 98.0
+margin_right = 325.0
+margin_bottom = 163.0
+rect_scale = Vector2( 1.8, 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+text = "Yeayy!!  selamat kamu telah bermain game 
+gobak sodor keadaan kamu  semakin sehat 
+karena game ini termasuk game 
+Olahraga.."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Musik" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
+
+[connection signal="pressed" from="menu/lanjut" to="." method="_on_lanjut_pressed"]
+[connection signal="pressed" from="menu/keluar_gameTradisional" to="." method="_on_keluar_gameTradisional_pressed"]

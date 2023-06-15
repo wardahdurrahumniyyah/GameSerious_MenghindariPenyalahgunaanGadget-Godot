@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/mixkit-unlock-game-notification-253.wav-d89f6fa70be95832090025ba2b1f4d8d.sample"
+
+[deps]
+
+source_file="res://musik/mixkit-unlock-game-notification-253.wav"
+dest_files=[ "res://.import/mixkit-unlock-game-notification-253.wav-d89f6fa70be95832090025ba2b1f4d8d.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

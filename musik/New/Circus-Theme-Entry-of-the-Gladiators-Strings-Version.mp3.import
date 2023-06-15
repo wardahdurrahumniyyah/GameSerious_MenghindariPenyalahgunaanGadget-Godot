@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/Circus-Theme-Entry-of-the-Gladiators-Strings-Version.mp3-384151ac59f5916c1f5151b513394d0c.mp3str"
+
+[deps]
+
+source_file="res://musik/New/Circus-Theme-Entry-of-the-Gladiators-Strings-Version.mp3"
+dest_files=[ "res://.import/Circus-Theme-Entry-of-the-Gladiators-Strings-Version.mp3-384151ac59f5916c1f5151b513394d0c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

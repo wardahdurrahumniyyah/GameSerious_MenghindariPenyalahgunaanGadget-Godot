@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/LurkingSloth-320bit.mp3-d1f2830ff136e43b9eed8c85babd8e21.mp3str"
+
+[deps]
+
+source_file="res://musik/LurkingSloth-320bit.mp3"
+dest_files=[ "res://.import/LurkingSloth-320bit.mp3-d1f2830ff136e43b9eed8c85babd8e21.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

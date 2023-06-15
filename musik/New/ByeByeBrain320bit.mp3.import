@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/ByeByeBrain320bit.mp3-8cba1e7ad7168481af5426c5ecf437f6.mp3str"
+
+[deps]
+
+source_file="res://musik/New/ByeByeBrain320bit.mp3"
+dest_files=[ "res://.import/ByeByeBrain320bit.mp3-8cba1e7ad7168481af5426c5ecf437f6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

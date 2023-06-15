@@ -1,0 +1,617 @@
+[gd_scene load_steps=32 format=2]
+
+[ext_resource path="res://aset/rumput.png" type="Texture" id=1]
+[ext_resource path="res://scene2D/karakter/Pemain.tscn" type="PackedScene" id=2]
+[ext_resource path="res://script/Camera2D.gd" type="Script" id=3]
+[ext_resource path="res://aset/gambar1.jpeg" type="Texture" id=4]
+[ext_resource path="res://scene2D/karakter/Penjaga.tscn" type="PackedScene" id=5]
+[ext_resource path="res://script/Penjaga.gd" type="Script" id=6]
+[ext_resource path="res://aset/all_sprit/tangkap (1).png" type="Texture" id=7]
+[ext_resource path="res://aset/all_sprit/menang (2).png" type="Texture" id=8]
+[ext_resource path="res://script/Lapangan.gd" type="Script" id=9]
+[ext_resource path="res://aset/tom_replay.png" type="Texture" id=10]
+[ext_resource path="res://aset/tom_replay - Copy.png" type="Texture" id=11]
+[ext_resource path="res://musik/New/FastFeelBananaPeel-320bit.mp3" type="AudioStream" id=12]
+[ext_resource path="res://musik/audio/game off.mp3" type="AudioStream" id=13]
+[ext_resource path="res://musik/audio/game complete.wav" type="AudioStream" id=14]
+[ext_resource path="res://aset/header.png" type="Texture" id=15]
+[ext_resource path="res://aset/rumput1.png" type="Texture" id=16]
+[ext_resource path="res://aset/table.png" type="Texture" id=21]
+
+[sub_resource type="Animation" id=1]
+resource_name = "d_blk"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("kuning:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.5, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 9, 10, 11, 10 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("kuning:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.79367, 4.41201 ) ]
+}
+
+[sub_resource type="Animation" id=7]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Lk1:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Lk1:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.55271, 2.90464 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("kuning:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("kuning:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.79367, 4.41201 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("kuning:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2.99997, -36.9999 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("kuning:hframes")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 3 ]
+}
+
+[sub_resource type="Animation" id=8]
+resource_name = "d_blk"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("kuning:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.5, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 9, 10, 11, 10 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("kuning:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.79367, 4.41201 ) ]
+}
+
+[sub_resource type="Animation" id=9]
+resource_name = "diam"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("kuning:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("kuning:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.79367, 4.41201 ) ]
+}
+
+[sub_resource type="Animation" id=10]
+resource_name = "kanan"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("kuning:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 7, 8, 8 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("kuning:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.79367, 4.41201 ) ]
+}
+
+[sub_resource type="Animation" id=11]
+resource_name = "kiri"
+tracks/0/type = "value"
+tracks/0/path = NodePath("kuning:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 3, 4, 5, 5 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("kuning:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.79367, 4.41201 ) ]
+}
+
+[sub_resource type="Animation" id=12]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/path = NodePath("Lk1:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Lk1:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.55271, 2.90464 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("kuning:frame")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath("kuning:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.79367, 4.41201 ) ]
+}
+tracks/4/type = "value"
+tracks/4/path = NodePath("kuning:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 2.99997, -36.9999 ) ]
+}
+tracks/5/type = "value"
+tracks/5/path = NodePath("kuning:hframes")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 3 ]
+}
+
+[sub_resource type="Animation" id=13]
+resource_name = "d_blk"
+loop = true
+tracks/0/type = "value"
+tracks/0/path = NodePath("kuning:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.2, 0.5, 0.8 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 9, 10, 11, 10 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("kuning:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.79367, 4.41201 ) ]
+}
+
+[sub_resource type="Animation" id=14]
+resource_name = "diam"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("kuning:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ 0, 1, 2 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("kuning:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.79367, 4.41201 ) ]
+}
+
+[sub_resource type="Animation" id=15]
+resource_name = "kanan"
+length = 0.8
+tracks/0/type = "value"
+tracks/0/path = NodePath("kuning:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 6, 7, 8, 8 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("kuning:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.79367, 4.41201 ) ]
+}
+
+[sub_resource type="Animation" id=16]
+resource_name = "kiri"
+tracks/0/type = "value"
+tracks/0/path = NodePath("kuning:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.1, 0.2, 0.3 ),
+"transitions": PoolRealArray( 1, 1, 1, 1 ),
+"update": 1,
+"values": [ 3, 4, 5, 5 ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("kuning:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ Vector2( 3.79367, 4.41201 ) ]
+}
+
+[sub_resource type="BitmapFont" id=17]
+
+[sub_resource type="StyleBoxTexture" id=18]
+
+[sub_resource type="StyleBoxEmpty" id=19]
+
+[node name="Lapangan" type="Node2D"]
+script = ExtResource( 9 )
+
+[node name="Gambar1" type="Sprite" parent="."]
+position = Vector2( 508, 754.876 )
+scale = Vector2( 0.95625, 3.75524 )
+texture = ExtResource( 4 )
+
+[node name="Background" type="Sprite" parent="."]
+visible = false
+position = Vector2( 511, 845.499 )
+scale = Vector2( 1.48908, 3.45621 )
+texture = ExtResource( 1 )
+
+[node name="Rumput1" type="Sprite" parent="."]
+position = Vector2( 512.25, 851 )
+scale = Vector2( 3.51596, 4.2444 )
+texture = ExtResource( 16 )
+
+[node name="Judul" type="Sprite" parent="."]
+visible = false
+position = Vector2( 524, 1466.75 )
+scale = Vector2( 0.617149, 0.392677 )
+texture = ExtResource( 15 )
+
+[node name="Tween" type="Tween" parent="Judul"]
+
+[node name="Pemain" parent="." instance=ExtResource( 2 )]
+position = Vector2( 504, 1550 )
+
+[node name="lakilaki_coklat" parent="Pemain" index="0"]
+position = Vector2( 0, 0 )
+
+[node name="CollisionShape2D" parent="Pemain" index="1"]
+position = Vector2( 1, -3 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 512, 274 )
+current = true
+script = ExtResource( 3 )
+
+[node name="Batas" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Batas"]
+polygon = PoolVector2Array( 113, 65, 116, 1625, 924, 1625, 924, 79, 919, 46, 962, 46, 962, 1659, 82, 1663, 77, 22, 972, 22, 972, 65 )
+
+[node name="Penjaga" parent="." instance=ExtResource( 5 )]
+position = Vector2( 506, 1035 )
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" parent="Penjaga" index="1"]
+position = Vector2( 2, -12 )
+
+[node name="AnimationPlayer" parent="Penjaga" index="2"]
+anims/d_blk = SubResource( 1 )
+
+[node name="Penjaga2" parent="." instance=ExtResource( 5 )]
+position = Vector2( 513, 671 )
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" parent="Penjaga2" index="1"]
+position = Vector2( 2, -12 )
+
+[node name="AnimationPlayer" parent="Penjaga2" index="2"]
+anims/RESET = SubResource( 7 )
+anims/d_blk = SubResource( 8 )
+anims/diam = SubResource( 9 )
+anims/kanan = SubResource( 10 )
+anims/kiri = SubResource( 11 )
+
+[node name="Penjaga3" parent="." instance=ExtResource( 5 )]
+position = Vector2( 512, 323 )
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" parent="Penjaga3" index="1"]
+position = Vector2( 2, 1 )
+
+[node name="AnimationPlayer" parent="Penjaga3" index="2"]
+anims/RESET = SubResource( 12 )
+anims/d_blk = SubResource( 13 )
+anims/diam = SubResource( 14 )
+anims/kanan = SubResource( 15 )
+anims/kiri = SubResource( 16 )
+
+[node name="Ketangkap" type="Sprite" parent="."]
+position = Vector2( 1, 0 )
+scale = Vector2( 1.08446, 1.04327 )
+texture = ExtResource( 7 )
+
+[node name="Menang" type="Sprite" parent="."]
+position = Vector2( 509, 155 )
+texture = ExtResource( 8 )
+
+[node name="ulang" type="TextureButton" parent="."]
+margin_left = -36.0
+margin_top = 3.0
+margin_right = 116.0
+margin_bottom = 87.0
+texture_normal = ExtResource( 10 )
+texture_pressed = ExtResource( 11 )
+texture_hover = ExtResource( 11 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Musik" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 12 )
+autoplay = true
+
+[node name="SuaraTangkap" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 13 )
+
+[node name="SuaraMenang" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 14 )
+
+[node name="POPUP" type="Panel" parent="."]
+margin_left = 99.0
+margin_top = -160.0
+margin_right = 953.0
+margin_bottom = 280.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Table" type="Sprite" parent="POPUP"]
+position = Vector2( 429, 223 )
+scale = Vector2( 1.01456, 0.754513 )
+texture = ExtResource( 21 )
+
+[node name="menu2" type="VBoxContainer" parent="POPUP"]
+anchor_right = 0.327
+anchor_bottom = 0.891
+margin_left = 231.0
+margin_top = 232.0
+margin_right = 331.742
+margin_bottom = -116.04
+rect_scale = Vector2( 1, 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="ulangi" type="Button" parent="POPUP/menu2"]
+margin_right = 380.0
+margin_bottom = 20.0
+text = "REPLAY"
+
+[node name="menu" type="Button" parent="POPUP/menu2"]
+margin_top = 24.0
+margin_right = 380.0
+margin_bottom = 44.0
+text = "NEXT"
+
+[node name="RichTextLabel" type="RichTextLabel" parent="POPUP"]
+margin_left = 101.0
+margin_top = 169.0
+margin_right = 491.0
+margin_bottom = 199.0
+rect_scale = Vector2( 1.7, 2.5 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+custom_colors/selection_color = Color( 0, 0, 0, 1 )
+text = "Selamat Kamu Telah Menyelesaikan Tantangan Di Game Ini!!"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="POPUP"]
+margin_left = 258.0
+margin_top = 100.0
+margin_right = 422.0
+margin_bottom = 128.0
+rect_scale = Vector2( 2.3, 2.5 )
+custom_colors/default_color = Color( 1, 0, 0, 1 )
+custom_colors/selection_color = Color( 0.00784314, 0.141176, 0.0509804, 1 )
+custom_colors/font_color_selected = Color( 0, 0, 0, 1 )
+custom_fonts/mono_font = SubResource( 17 )
+custom_styles/focus = SubResource( 18 )
+custom_styles/normal = SubResource( 19 )
+text = "YEAYYY KAMU BERHASIL"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="tween_all_completed" from="Judul/Tween" to="." method="_on_Tween_tween_all_completed"]
+[connection signal="pressed" from="ulang" to="." method="_on_ulang_pressed"]
+[connection signal="pressed" from="POPUP/menu2/ulangi" to="." method="_on_ulangi_pressed"]
+[connection signal="pressed" from="POPUP/menu2/menu" to="." method="_on_menu_pressed"]
+
+[editable path="Pemain"]
+[editable path="Penjaga"]
+[editable path="Penjaga2"]
+[editable path="Penjaga3"]

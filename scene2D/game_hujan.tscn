@@ -1,0 +1,247 @@
+[gd_scene load_steps=19 format=2]
+
+[ext_resource path="res://scene2D/script/game_hujan.gd" type="Script" id=1]
+[ext_resource path="res://scene2D/script/Camera2D.gd" type="Script" id=2]
+[ext_resource path="res://aset/bu_dini/dua.png" type="Texture" id=3]
+[ext_resource path="res://scene2D/barang/orang1.png" type="Texture" id=4]
+[ext_resource path="res://musik/Monkeys-Spinning-Monkeys.mp3" type="AudioStream" id=5]
+[ext_resource path="res://scene2D/barang/orang3.png" type="Texture" id=6]
+[ext_resource path="res://scene2D/barang/orang2.png" type="Texture" id=7]
+[ext_resource path="res://aset/bu_dini/3.png" type="Texture" id=8]
+[ext_resource path="res://musik/mixkit-unlock-game-notification-253.wav" type="AudioStream" id=10]
+[ext_resource path="res://scene2D/karakter/Pemain.tscn" type="PackedScene" id=11]
+[ext_resource path="res://aset/table.png" type="Texture" id=14]
+[ext_resource path="res://aset/gambar1.jpeg" type="Texture" id=15]
+[ext_resource path="res://aset/rumput/image-removebg-preview (6).png" type="Texture" id=16]
+[ext_resource path="res://aset/rumput/image-removebg-preview (4).png" type="Texture" id=17]
+[ext_resource path="res://aset/awan.jpg" type="Texture" id=18]
+[ext_resource path="res://aset/rumput/jalan.png" type="Texture" id=19]
+[ext_resource path="res://aset/rumput/ps.png" type="Texture" id=20]
+[ext_resource path="res://aset/rumput/image-removebg-preview (5).png" type="Texture" id=21]
+
+[node name="game_hujan" type="Node2D"]
+position = Vector2( -457, -312 )
+script = ExtResource( 1 )
+
+[node name="bg" type="Sprite" parent="."]
+position = Vector2( 993, 1020 )
+scale = Vector2( 2.16562, 1.68237 )
+texture = ExtResource( 15 )
+
+[node name="awan1" type="Sprite" parent="bg"]
+position = Vector2( 28.3984, -699.311 )
+scale = Vector2( 8.52873, 3.93889 )
+texture = ExtResource( 18 )
+
+[node name="tanahijo" type="Sprite" parent="bg"]
+position = Vector2( 32.9581, 57.6567 )
+scale = Vector2( 1.99973, 1.15975 )
+texture = ExtResource( 15 )
+
+[node name="Jalan" type="Sprite" parent="bg"]
+position = Vector2( -63.3772, -124.824 )
+scale = Vector2( 0.953425, 0.945799 )
+texture = ExtResource( 19 )
+
+[node name="Awan" type="Sprite" parent="bg"]
+position = Vector2( -2.94114, -520.099 )
+scale = Vector2( 4.27896, 2.1821 )
+texture = ExtResource( 18 )
+
+[node name="r" type="Sprite" parent="bg"]
+position = Vector2( -311.401, 30.3143 )
+scale = Vector2( 0.905765, 0.754142 )
+texture = ExtResource( 17 )
+
+[node name="r3" type="Sprite" parent="bg"]
+position = Vector2( -801.156, 30.9088 )
+scale = Vector2( 0.905765, 0.754142 )
+texture = ExtResource( 17 )
+
+[node name="r4" type="Sprite" parent="bg"]
+position = Vector2( 905.976, 30.3144 )
+scale = Vector2( 0.905765, 0.754142 )
+texture = ExtResource( 17 )
+
+[node name="r2" type="Sprite" parent="bg"]
+position = Vector2( 316.685, 30.3143 )
+scale = Vector2( 0.922898, 0.754142 )
+texture = ExtResource( 17 )
+
+[node name="pohon" type="Sprite" parent="bg"]
+position = Vector2( -549.033, -86.7822 )
+scale = Vector2( 0.545368, 1.04176 )
+texture = ExtResource( 16 )
+
+[node name="phn" type="Sprite" parent="bg"]
+position = Vector2( 529.177, -60.6287 )
+scale = Vector2( 0.389109, 0.510625 )
+texture = ExtResource( 21 )
+
+[node name="Ps" type="Sprite" parent="bg"]
+position = Vector2( -180.202, -376.817 )
+scale = Vector2( 0.597432, 0.723796 )
+texture = ExtResource( 20 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 963, 617 )
+current = true
+zoom = Vector2( 2, 2 )
+script = ExtResource( 2 )
+
+[node name="Tween" type="Tween" parent="."]
+
+[node name="klik" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 10 )
+
+[node name="Orang1" type="Sprite" parent="."]
+position = Vector2( 1578, 903 )
+scale = Vector2( 0.356759, 0.340548 )
+texture = ExtResource( 4 )
+
+[node name="Orang5" type="Sprite" parent="Orang1"]
+position = Vector2( -4274.6, 487.449 )
+texture = ExtResource( 4 )
+
+[node name="Orang2" type="Sprite" parent="Orang1"]
+position = Vector2( -468.103, -969.025 )
+scale = Vector2( 1.06566, 1.06446 )
+texture = ExtResource( 7 )
+
+[node name="Orang4" type="Sprite" parent="Orang1"]
+position = Vector2( -4268.99, -936.724 )
+scale = Vector2( 1.06566, 1.06446 )
+texture = ExtResource( 7 )
+
+[node name="Orang3" type="Sprite" parent="Orang1"]
+position = Vector2( -3495.36, -481.576 )
+scale = Vector2( 1.15277, 1.11258 )
+texture = ExtResource( 6 )
+
+[node name="Orang7" type="Sprite" parent="Orang1"]
+position = Vector2( 1129.61, -648.953 )
+scale = Vector2( 1.15277, 1.11258 )
+texture = ExtResource( 6 )
+
+[node name="Orang6" type="Sprite" parent="Orang1"]
+position = Vector2( -955.828, 519.75 )
+scale = Vector2( 1.15277, 1.11258 )
+texture = ExtResource( 6 )
+
+[node name="musuh" parent="." instance=ExtResource( 11 )]
+position = Vector2( 975, 760 )
+
+[node name="Dialogteks" type="Sprite" parent="."]
+position = Vector2( 934, 757 )
+scale = Vector2( 2.22644, 2.47024 )
+texture = ExtResource( 3 )
+
+[node name="3" type="Sprite" parent="Dialogteks"]
+position = Vector2( -1.34744, -0.404846 )
+scale = Vector2( 0.89209, 0.660809 )
+texture = ExtResource( 8 )
+
+[node name="dialog" type="RichTextLabel" parent="."]
+margin_left = 601.0
+margin_top = 712.0
+margin_right = 928.0
+margin_bottom = 753.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Selamat Datang, anda memasuki area bermain gadget.."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.5
+autostart = true
+
+[node name="skor" type="RichTextLabel" parent="."]
+margin_left = 565.0
+margin_top = 154.0
+margin_right = 645.0
+margin_bottom = 175.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Skor : 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="timer_skor" type="Timer" parent="."]
+wait_time = 0.05
+autostart = true
+
+[node name="over" type="Sprite" parent="."]
+visible = false
+position = Vector2( -3, 107 )
+
+[node name="Table" type="Sprite" parent="over"]
+position = Vector2( 919.5, 508 )
+scale = Vector2( 0.96966, 0.606498 )
+texture = ExtResource( 14 )
+
+[node name="skor2" type="RichTextLabel" parent="over"]
+margin_left = 624.0
+margin_top = 401.0
+margin_right = 774.0
+margin_bottom = 422.0
+rect_scale = Vector2( 2, 2 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Skor : 0"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="menu" type="VBoxContainer" parent="over"]
+anchor_right = 0.327
+anchor_bottom = 0.891
+margin_left = 806.0
+margin_top = 474.0
+margin_right = 907.0
+margin_bottom = 521.0
+rect_scale = Vector2( 2.5, 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="replay" type="Button" parent="over/menu"]
+margin_right = 101.0
+margin_bottom = 20.0
+text = "REPLAY"
+
+[node name="gantiscene" type="Button" parent="over/menu"]
+margin_top = 24.0
+margin_right = 101.0
+margin_bottom = 44.0
+text = "NEXT"
+
+[node name="bgm" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 5 )
+autoplay = true
+attenuation = 0.241484
+
+[node name="Batas" type="StaticBody2D" parent="."]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Batas"]
+position = Vector2( 1.78909, 97.0715 )
+scale = Vector2( 1.86313, 0.618906 )
+polygon = PoolVector2Array( 97.2616, 64.5146, 102.629, 1609.18, 951.201, 1596.25, 939.393, 906.322, 936.173, 79.0564, 936.173, 46.7413, 962, 46, 975.354, 1659.26, 969.45, 1652.8, 82, 1663, 77, 22, 972, 22, 972, 65 )
+
+[node name="button_selanjutnya" type="Button" parent="."]
+margin_left = 1149.0
+margin_top = 806.0
+margin_right = 1244.0
+margin_bottom = 838.0
+rect_scale = Vector2( 2, 2 )
+text = "NEXT"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="timer_skor" to="." method="_on_timer_skor_timeout"]
+[connection signal="pressed" from="over/menu/replay" to="." method="_on_replay_pressed"]
+[connection signal="pressed" from="over/menu/gantiscene" to="." method="_on_gantiscene_pressed"]
+[connection signal="pressed" from="button_selanjutnya" to="." method="_on_button_selanjutnya_pressed"]

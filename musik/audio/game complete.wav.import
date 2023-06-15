@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/game complete.wav-3bf6bfa35463e6f8949cf42279d24cd0.sample"
+
+[deps]
+
+source_file="res://musik/audio/game complete.wav"
+dest_files=[ "res://.import/game complete.wav-3bf6bfa35463e6f8949cf42279d24cd0.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
